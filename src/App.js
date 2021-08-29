@@ -1,14 +1,18 @@
 import "./App.css";
 import Header from "./components/Header/Header";
 import MainHeader from "./components/Header/MainHeader";
-import TabsContainer from "./components/PhoneTabs/TabsContainer";
+import IconSection from "./components/IconSection/IconSection";
+import TabsSection from "./components/PhoneTabs/TabsSection";
+import LastPhones from "./components/LastPhonesSection/LastPhones";
 
 function App() {
   return (
     <>
       <Header />
       <MainHeader />
-      <TabsContainer />
+      <TabsSection />
+      <IconSection />
+      <LastPhones />
     </>
   );
 }
