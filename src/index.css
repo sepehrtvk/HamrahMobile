@@ -13,6 +13,7 @@
 body {
   margin: 0;
   font-family: 'Shabnam', sans-serif !important; 
+  box-sizing: inherit;
 }
 *{
   margin: 0;

@@ -2,6 +2,7 @@ import React from "react";
 import { Navbar, Container, Nav } from "react-bootstrap";
 import { BsFillPersonFill } from "react-icons/bs";
 import { FaPhoneAlt } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -10,7 +11,7 @@ const Header = () => {
         <Navbar.Brand href="#home">همراه موبایل</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
+          <Nav className="me-4">
             <Nav.Link href="#home">ثبت آگهی فروش</Nav.Link>
             <Nav.Link href="#link">خرید موبایل</Nav.Link>
             <Nav.Link href="#link۲">کارشناسی موبایل</Nav.Link>
@@ -26,17 +27,17 @@ const Header = () => {
               </NavDropdown.Item>
             </NavDropdown> */}
           </Nav>
-          <div className="d-flex align-items-center">
-            <button type="button" className="btn btn-primary">
-              <BsFillPersonFill className="me-1" />
-              ورود
-            </button>
-            <div className="ms-4 border-start ps-3">
-              <FaPhoneAlt />
-              <span className="ms-1" >۰۹۱۲۰۵۳۲۰۲۰</span>
-            </div>
-          </div>
         </Navbar.Collapse>
+        <div className="d-flex align-items-center">
+          <Link to="/auth" className="btn btn-primary">
+            <BsFillPersonFill className="me-1" />
+            ورود
+          </Link>
+          <div className="ms-4 border-start ps-3">
+            <FaPhoneAlt />
+            <span className="ms-1">۰۹۱۲۰۵۳۲۰۲۰</span>
+          </div>
+        </div>
       </Container>
     </Navbar>
   );

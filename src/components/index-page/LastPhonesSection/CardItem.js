@@ -8,13 +8,13 @@ const CardItem = (props) => {
         <h5 className="card-title mb-4 text-center fw-bold"> {props.title}</h5>
         <p className="card-text">
           {" "}
-          وضعیت :<span className="text-secondary"> {props.status}</span>
+          وضعیت :<span className="text-warning"> {props.status}</span>
         </p>
         <p className="card-text">
           توضیحات :<span className="text-secondary"> {props.description}</span>
         </p>
         <p className="card-text mb-4">
-          قیمت :<span className="text-secondary"> {props.price} تومان</span>
+          قیمت :<span className="text-info"> {props.price} تومان</span>
         </p>
         <a href="#" className="btn btn-primary w-100">
           خرید

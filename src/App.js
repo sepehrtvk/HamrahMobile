@@ -1,18 +1,22 @@
 import "./App.css";
-import Header from "./components/Header/Header";
-import MainHeader from "./components/Header/MainHeader";
-import IconSection from "./components/IconSection/IconSection";
-import TabsSection from "./components/PhoneTabs/TabsSection";
-import LastPhones from "./components/LastPhonesSection/LastPhones";
+import Index from "./pages/Index";
+import Layout from "./components/Layout/Layout";
+import { Route, Switch } from "react-router";
+import AuthForm from "./components/Auth/AuthForm";
 
 function App() {
   return (
     <>
-      <Header />
-      <MainHeader />
-      <TabsSection />
-      <IconSection />
-      <LastPhones />
+      <Layout>
+        <Switch>
+          <Route path="/" exact>
+            <Index />
+          </Route>
+          <Route path="/auth" exact>
+            <AuthForm />
+          </Route>
+        </Switch>
+      </Layout>
     </>
   );
 }

@@ -1,7 +1,7 @@
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import CardItem from "./CardItem";
-import samsungPhoto from "../../assets/images/samsaung.png";
+import samsungPhoto from "../../../assets/images/samsaung.png";
 
 const responsive = {
   superLargeDesktop: {
