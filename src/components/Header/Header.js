@@ -17,7 +17,7 @@ const Header = () => {
             <Nav.Link as={NavLink} to="/phonePrice">  
               قیمت موبایل
             </Nav.Link>
-            <Nav.Link href="#link۲">کارشناسی موبایل</Nav.Link>
+            <Nav.Link as={NavLink} to="/phoneCheck">کارشناسی موبایل</Nav.Link>
             {/* <NavDropdown title="Dropdown" id="basic-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">

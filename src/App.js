@@ -4,6 +4,7 @@ import Layout from "./components/Layout/Layout";
 import { Route, Switch } from "react-router";
 import AuthForm from "./components/Auth/AuthForm";
 import PhonePrice from "./components/PhonePrice/PhonePrice";
+import PhoneCheck from "./components/PhoneCheck/PhoneCheck";
 
 function App() {
   return (
@@ -18,6 +19,9 @@ function App() {
           </Route>
           <Route path="/phonePrice">
             <PhonePrice />
+          </Route>
+          <Route path="/phoneCheck">
+            <PhoneCheck />
           </Route>
         </Switch>
       </Layout>

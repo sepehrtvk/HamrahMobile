@@ -1,0 +1,16 @@
+.photo {
+  background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url("../../assets/images/onlineCheck.jpg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 0.3rem;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+
+  flex: 0 0 50%;
+  overflow: hidden;
+}
